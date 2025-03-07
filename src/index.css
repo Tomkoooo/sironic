@@ -36,5 +36,24 @@
 }
 
 .btn-ghost {
-  @apply text-black hover:bg-secondary;
+  @apply text-white hover:bg-secondary hover:border-0;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.group:hover .card-front {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.group:hover .card-back {
+  transform: rotateY(0deg);
+  opacity: 100;
+}
+
+.card-front, .card-back {
+  transition: transform 0.6s, opacity 0.6s;
+  transform-style: preserve-3d;
 }

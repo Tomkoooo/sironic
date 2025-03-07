@@ -20,7 +20,7 @@ interface AboutSectionData {
 
 const AboutSection = () => {
   return (
-    <div className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center">
+    <div id="rolunk" className="container mx-auto px-6 py-16 flex flex-col lg:flex-row items-center">
       {/* Left Text Content */}
       <div className="lg:w-1/2 text-left">
         <h3 className="text-primary uppercase font-bold tracking-wider">{aboutData.subtitle}</h3>
@@ -47,7 +47,7 @@ const AboutSection = () => {
 
         {/* Decorative Elements */}
         <div className="absolute bottom-0 left-10 w-10 h-2 bg-primary"></div>
-        <div className="absolute bottom-4 right-12 w-6 h-6 bg-red-500 rounded-full"></div>
+        <div className="absolute bottom-4 right-12 w-6 h-6 bg-primary rounded-full"></div>
       </div>
     </div>
   );

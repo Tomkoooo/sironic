@@ -1,3 +1,4 @@
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { useState } from "react";
 
 interface HeroSlide {
@@ -59,11 +60,11 @@ export default function HeroSlider() {
   const currentSlide = slides[currentIndex];
 
   return (
-    <div className={`relative w-full h-[80vh] flex items-center justify-center ${currentSlide.bgColor} transition-all duration-500`}>
+    <div id="hero" className={`relative w-full h-[80vh] flex items-center justify-center ${currentSlide.bgColor} transition-all duration-500`}>
       <div className={`absolute inset-0 flex transition-opacity duration-500 ${fade ? 'opacity-0' : 'opacity-100'}`}>
         {currentSlide.dividerSide === "left" ? (
           <>
-            <div className="w-1/2 flex flex-col justify-center items-start p-10 text-white">
+            <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-10 text-white">
               <h1 className="text-4xl font-bold">{currentSlide.title}</h1>
               {currentSlide.subtitle && <p className="mt-2">{currentSlide.subtitle}</p>}
               {currentSlide.buttonLabel && (
@@ -74,7 +75,7 @@ export default function HeroSlider() {
             </div>
                {/* Jobb oldali kép háttérrel és döntött elválasztással */}
                 <div
-                className="w-1/2 flex justify-center bg-no-repeat bg-cover bg-center relative"
+                className="hidden md:flex w-1/2  justify-center bg-no-repeat bg-cover bg-center relative"
                 style={{
                     backgroundImage: "url(" + currentSlide.image + ")",
                     clipPath: "polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%)",
@@ -84,13 +85,13 @@ export default function HeroSlider() {
         ) : (
           <>
             <div
-                className="w-1/2 flex justify-center bg-no-repeat bg-cover bg-center relative"
+                className="w-1/2 hidden md:flex justify-center bg-no-repeat bg-cover bg-center relative"
                 style={{
                     backgroundImage: "url(" + currentSlide.image + ")",
                     clipPath: "polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%)",
                 }}
             ></div>
-            <div className="w-1/2 flex flex-col justify-center items-start p-10 text-white">
+            <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-10 text-white">
               <h1 className="text-4xl font-bold">{currentSlide.title}</h1>
               {currentSlide.subtitle && <p className="mt-2">{currentSlide.subtitle}</p>}
               {currentSlide.buttonLabel && (
@@ -105,10 +106,10 @@ export default function HeroSlider() {
 
       {/* Slider Controls */}
       <button onClick={prevSlide} className="absolute left-3 btn btn-ghost">
-        &#8592;
+        <IconArrowLeft color="black"/>
       </button>
       <button onClick={nextSlide} className="absolute right-3 btn btn-ghost">
-        &#8594;
+        <IconArrowRight color="black"/>
       </button>
     </div>
   );

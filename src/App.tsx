@@ -1,14 +1,22 @@
 import Navbar from './components/navbar'
 import Hero from './components/hero'
 import AboutSection from './components/about'
+import CardList from './components/service'
+import PartnersComponent from './components/partners'
+import ContactComponent from './components/contat'
+import Footer from './components/footer'
 
 const App = () => {
   return (
-   <div className='h-screen'>
+   <>
     <Navbar/>
     <Hero/>
     <AboutSection/>
-   </div>
+    <CardList/>
+    <PartnersComponent/>
+    <ContactComponent/>
+    <Footer/>
+   </>
   )
 }
 
