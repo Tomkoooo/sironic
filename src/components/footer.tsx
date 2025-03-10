@@ -6,15 +6,15 @@ const Footer = () => {
   const footerData = {
     address: {
       title: 'Kapcsolat',
-      street: '1111 Budapest, Kossuth Lajos utca 1.',
-      phone: '+36 1 123 4567',
-      email: 'email@me.hu',
+      street: '8000 Székesfehérvár, Lövölde utca 24 4/15',
+      phone: '+36702735532',
+      email: 'hello@sironic.hu',
     },
     companyInfo: {
       title: 'Cégadatok',
-      name: 'Példa Kft.',
-      taxNumber: '12345678-1-23',
-      registrationNumber: '01-09-123456',
+      name: 'Skoda Dávid András Egyéni Vállalkozó',
+      taxNumber: '45755754-2-27',
+      registrationNumber: '58338658',
     },
     infoLinks: {
       title: 'Tájékoztató',

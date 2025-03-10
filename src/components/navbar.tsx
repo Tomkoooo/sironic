@@ -24,23 +24,23 @@ const Navbar = () => {
     const navbarElements: NavbarElement[] = [
         {
         id: 1,
-        name: "Home",
+        name: "Kezdőlap",
         link: "#",
         },
         {
         id: 2,
-        name: "About",
-        link: "#",
+        name: "Rólunk",
+        link: "#rolunk",
         },
         {
         id: 3,
-        name: "Services",
-        link: "#",
+        name: "Szolgáltatásaink",
+        link: "#szolgaltatas",
         },
         {
         id: 4,
-        name: "Contact",
-        link: "#",
+        name: "Kapcsolat",
+        link: "#kapcsolat",
         },
     ]
 
@@ -49,26 +49,26 @@ const Navbar = () => {
         id: 1,
         icon: <IconMail size={16}/>,
         link: "mailto:",
-        text: "info@email.me"
+        text: "hello@sironic.hu"
         },
         {
         id: 2,
         icon: <IconPhoneCall size={16}/>,
         link: "tel:",
-        text: "+36 30 123 4567"
+        text: "+36702735532"
         }
     ]
 
     const icon: Icon = {
-        link: "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
-        alt: "Google"
+        link: "/logo/logo2.svg",
+        alt: "SIRONIC rendszerház"
     }
     return (
         <nav className="bg-primary text-white w-full sticky top-0 z-50 rounded-b-lg shadow-md">
           <div className="px-3 flex justify-between items-center h-16">
             {/* Left Side - Logo & Brand Name */}
             <div className="flex gap-3 items-center">
-              <img src={icon.link} alt={icon.alt} className="w-12 lg:w-16" />
+              <img src={icon.link} alt={icon.alt} className="w-12 rounded-full lg:w-16" />
               <a href="#" className="uppercase font-bold text-lg">
                 {icon.alt}
               </a>

@@ -9,13 +9,13 @@ interface AboutSectionData {
   }
   
   const aboutData: AboutSectionData = {
-    title: "DATACORE TECHNOLOGY",
+    title: "SIRONIC Rendszerház",
     subtitle: "RÓLUNK",
     description:
-      "A DataCore Technology-nál célunk, hogy vállalkozása informatikai rendszerei mindig megbízhatóan és biztonságosan működjenek. Segítünk a hálózati infrastruktúra kiépítésében, karbantartásában, valamint a napi szintű IT támogatásban. Felhasználói számítógépek, szerverek és adatmentési megoldások terén is számíthat ránk. Emellett modern és gyors weboldalakat fejlesztünk, legyen szó bemutatkozó oldalról, webshopról vagy egyedi fejlesztésről.",
+      "Megbízható, biztonságos és hatékony IT megoldásokat nyújtunk vállalkozásoknak. Rendszerépítés, karbantartás, felhőmegoldások és webfejlesztés – mindent egy kézben, előre tervezhető költségekkel. Zökkenőmentes működés, Gyors hibaelhárítás, Proaktív IT támogatás",
     buttonText: "Részletek",
-    buttonLink: "#",
-    imageUrl: "https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg", // Update this with your actual image path
+    buttonLink: "#szolgaltatas",
+    imageUrl: "/logo/logo1.svg", // Update this with your actual image path
   };
 
 const AboutSection = () => {

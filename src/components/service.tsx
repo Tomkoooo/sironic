@@ -10,9 +10,9 @@ const CardList = () => {
       description: 'Weboldal készítés, üzemeltetés, és karbantartás.',
     },
     {
-      title: 'SZERVER ÜZEMELTETÉS, KARBANTARTÁS',
+      title: 'Szerver üzemeltetés, és karbantartás',
       icon: <IconServer size={48} className="text-primary" />,
-      description: 'Szerverek üzemeltetése és karbantartása magas szinten.',
+      description: 'Segítünk megtalálni az Ön vállalkozásának legjobb megoldását szerver téren',
     },
     {
       title: 'FELHŐ ALAPÚ MEGOLDÁSOK',
@@ -20,14 +20,14 @@ const CardList = () => {
       description: 'Felhő alapú rendszerek kiépítése és kezelése.',
     },
     {
-      title: 'HÁLÓZAT ÜZEMELTETÉS, KARBANTARTÁS',
+      title: 'Internet kapcsolati problémák kezelése',
       icon: <IconNetwork size={48} className="text-primary" />,
-      description: 'Hálózati infrastruktúra üzemeltetése és karbantartása.',
+      description: 'Lassú, szakadozó internet? Kiderítjük az okát és optimalizáljuk a hálózatát.',
     },
     {
-      title: 'SZÁMÍTÓGÉPEK, ÉS IT ESZKÖZÖK ÜZEMBE HELYEZÉSE',
+      title: 'Informatikai rendszerek kiépítése, korszerűsítése, karbantartása',
       icon: <IconDevicesPc size={48} className="text-primary" />,
-      description: 'IT eszközök és számítógépek beüzemelése.',
+      description: 'Legyen szó egy új irodáról vagy a meglévő rendszer fejlesztéséről. Biztosítjuk a gyors, stabil és biztonságos működést.',
     },
   ];
 

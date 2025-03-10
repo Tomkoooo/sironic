@@ -19,9 +19,9 @@ const slides: HeroSlide[] = [
     subtitle: "IT üzemeltetés, hálózati karbantartás és professzionális webfejlesztés",
     buttonLabel: "Kapcsolatfelvétel",
     buttonLink: "#contact",
-    bgColor: "bg-purple-700",
+    bgColor: "bg-primary",
     dividerSide: "left",
-    image: "https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg",
+    image: "slider-img.jpg",
   },
   {
     id: 2,
@@ -29,9 +29,9 @@ const slides: HeroSlide[] = [
     subtitle: "Hálózati biztonság, adatmentés és IT tanácsadás",
     buttonLabel: "Tudj meg többet",
     buttonLink: "#services",
-    bgColor: "bg-blue-600",
+    bgColor: "bg-secondary",
     dividerSide: "right",
-    image: "https://community.softr.io/uploads/db9110/original/2X/7/74e6e7e382d0ff5d7773ca9a87e6f6f8817a68a6.jpeg",
+    image: "slider3-img.jpg",
   },
 ];
 
