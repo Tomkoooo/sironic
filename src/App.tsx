@@ -3,7 +3,7 @@ import Hero from './components/hero'
 import AboutSection from './components/about'
 import CardList from './components/service'
 import PartnersComponent from './components/partners'
-import ContactComponent from './components/contat'
+import ContactComponent from './components/contact'
 import Footer from './components/footer'
 
 const App = () => {

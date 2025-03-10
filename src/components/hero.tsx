@@ -18,7 +18,7 @@ const slides: HeroSlide[] = [
     title: "Vállalkozása Megbízható Technikai Háttere",
     subtitle: "IT üzemeltetés, hálózati karbantartás és professzionális webfejlesztés",
     buttonLabel: "Kapcsolatfelvétel",
-    buttonLink: "#contact",
+    buttonLink: "#kapcsolat",
     bgColor: "bg-primary",
     dividerSide: "left",
     image: "slider-img.jpg",
@@ -28,7 +28,7 @@ const slides: HeroSlide[] = [
     title: "Biztonságos és Stabil Megoldások",
     subtitle: "Hálózati biztonság, adatmentés és IT tanácsadás",
     buttonLabel: "Tudj meg többet",
-    buttonLink: "#services",
+    buttonLink: "#szolgaltatas",
     bgColor: "bg-secondary",
     dividerSide: "right",
     image: "slider3-img.jpg",
@@ -68,7 +68,7 @@ export default function HeroSlider() {
               <h1 className="text-4xl font-bold">{currentSlide.title}</h1>
               {currentSlide.subtitle && <p className="mt-2">{currentSlide.subtitle}</p>}
               {currentSlide.buttonLabel && (
-                <a href={currentSlide.buttonLink} className="mt-4 px-6 py-3 bg-white text-black rounded-lg">
+                <a href={currentSlide.buttonLink} className="mt-4 px-6 py-3 bg-white text-black rounded-lg btn ">
                   {currentSlide.buttonLabel}
                 </a>
               )}
@@ -105,12 +105,19 @@ export default function HeroSlider() {
       </div>
 
       {/* Slider Controls */}
-      <button onClick={prevSlide} className="absolute left-3 btn btn-ghost">
-        <IconArrowLeft color="black"/>
+      <button
+        onClick={prevSlide}
+        className="absolute left-3 top-auto bottom-10 lg:top-3/4  btn btn-outline border-white hover:bg-white hover:text-black text-white"
+      >
+        <IconArrowLeft />
       </button>
-      <button onClick={nextSlide} className="absolute right-3 btn btn-ghost">
-        <IconArrowRight color="black"/>
+      <button
+        onClick={nextSlide}
+        className="absolute right-3 top-auto bottom-10 lg:top-3/4  btn btn-outline border-white hover:bg-white hover:text-black text-white"
+      >
+        <IconArrowRight />
       </button>
+
     </div>
   );
 }

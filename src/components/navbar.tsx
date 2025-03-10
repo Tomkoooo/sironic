@@ -34,8 +34,8 @@ const Navbar = () => {
         },
         {
         id: 3,
-        name: "Szolgáltatásaink",
-        link: "#szolgaltatas",
+        name: "Szomdáltatásaink",
+        link: "#szomdaltatas",
         },
         {
         id: 4,
@@ -64,12 +64,12 @@ const Navbar = () => {
         alt: "SIRONIC rendszerház"
     }
     return (
-        <nav className="bg-primary text-white w-full sticky top-0 z-50 rounded-b-lg shadow-md">
+        <nav className="bg-primary text-white w-full sticky top-0 z-50 rounded-b-md shadow-md">
           <div className="px-3 flex justify-between items-center h-16">
             {/* Left Side - Logo & Brand Name */}
             <div className="flex gap-3 items-center">
-              <img src={icon.link} alt={icon.alt} className="w-12 rounded-full lg:w-16" />
-              <a href="#" className="uppercase font-bold text-lg">
+              <img src={icon.link} alt={icon.alt} className="w-12 rounded-full md:w-16" />
+              <a href="#" className="uppercase font-bold text-md">
                 {icon.alt}
               </a>
             </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             {/* Mobile Menu Button with Animation */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="lg:hidden text-white focus:outline-none"
+              className="md:hidden text-white focus:outline-none"
             >
               <motion.div
                 animate={{ rotate: menuOpen ? 180 : 0 }} // Rotate animation
@@ -88,7 +88,7 @@ const Navbar = () => {
             </button>
     
             {/* Desktop Navigation Links */}
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden md:flex items-center gap-3">
               {navbarElements.map((element) => (
                 <a key={element.id} href={element.link} className="btn btn-ghost uppercase font-bold">
                   {element.name}
@@ -97,7 +97,7 @@ const Navbar = () => {
             </div>
     
             {/* Desktop Contact Links */}
-            <div className="hidden lg:flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               {contactElements.map((element) => (
                 <a key={element.id} href={element.link} className="flex btn btn-ghost items-center gap-2">
                   {element.icon}
@@ -107,7 +107,7 @@ const Navbar = () => {
             </div>
     
             {/* Desktop Partner Portal Button */}
-            <a href="/partner-portal" className="hidden lg:flex btn btn-success btn-outline uppercase">
+            <a href="/partner-portal" className="hidden md:flex btn border-white hover:bg-white hover:text-black text-white btn-outline uppercase">
               Partner Portal belépés
             </a>
           </div>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.2, ease: "easeInOut" }}
-                className="lg:hidden bg-primary p-4 flex flex-col gap-3"
+                className="md:hidden bg-primary p-4 flex flex-col gap-3"
               >
                 {navbarElements.map((element) => (
                   <a key={element.id} href={element.link} className="btn btn-ghost w-full text-center uppercase font-bold">
@@ -133,7 +133,7 @@ const Navbar = () => {
                     <span>{element.text}</span>
                   </a>
                 ))}
-                <a href="/partner-portal" className="btn btn-success btn-outline uppercase w-full text-center">
+                <a href="/partner-portal" className="btn border-white hover:bg-white hover:text-black text-white btn-outline uppercase w-full text-center">
                   Partner Portal belépés
                 </a>
               </motion.div>

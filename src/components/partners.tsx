@@ -6,7 +6,7 @@ const PartnersComponent = () => {
   // List of partners
   const partners = [
     {
-      name: "Prvector Zrt.",
+      name: "Pervector Zrt.",
       description: "Informatikai infrastruktúra karbantartása, javítás, támogatás",
       logo: "pervector_logo.PNG", 
       desc: "IT karbantartás, és támogatás",
@@ -42,7 +42,7 @@ const PartnersComponent = () => {
   };
 
   return (
-    <div id="partnerek" className=" py-10 px-4 flex flex-col items-center justify-center">
+    <div id="partnerek" className="min-h-[50vh] py-10 px-4 flex flex-col items-center justify-center">
       {/* Header */}
       <div className="text-left w-full mb-10">
         <h2 className="text-3xl px-2 font-bold text-gray-800 relative uppercase before:content-[''] before:block before:w-32 before:h-1 before:bg-primary before:left-0 before:absolute before:mt-9">
