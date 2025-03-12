@@ -11,12 +11,12 @@ interface AboutSectionData {
 }
 
 const aboutData: AboutSectionData = {
-    title: "SIRONIT Rendszerház",
+    title: "SIRONIC Rendszerház",
     subtitle: "RÓLUNK",
     description:
     "Megbízható, biztonságos és hatékony IT megoldásokat nyújtunk vállalkozásoknak. Rendszerépítés, karbantartás, felhőmegoldások és webfejlesztés – mindent egy kézben, előre tervezhető költségekkel. Zökkenőmentes működés, Gyors hibaelhárítás, Proaktív IT támogatás.",
     longerDescription:
-      "A modern vállalkozások sikerének alapja egy jól működő, biztonságos és hatékony informatikai rendszer. A SIRONIT Rendszerház célja, hogy levegye az IT-val kapcsolatos terheket ügyfelei válláról, és megbízható, átlátható megoldásokat nyújtson.\n\n Cégünk teljes körű informatikai szolgáltatásokat kínál, legyen szó rendszerek kiépítéséről, karbantartásáról vagy korszerűsítéséről. Segítünk a szerver- és felhőmegoldások kialakításában, biztosítjuk a hálózati stabilitást, és gyorsan reagálunk a felmerülő problémákra. Ügyfeleink számára havonta előre tervezhető IT támogatást biztosítunk, így nem kell váratlan költségekkel számolniuk.\n\nWebfejlesztési szolgáltatásainkkal gondoskodunk arról, hogy vállalkozása online megjelenése professzionális és naprakész legyen. Modern, gyors és felhasználóbarát weboldalakat készítünk, amelyek megfelelnek a mai piaci elvárásoknak.\n\nHa Ön is szeretné, hogy informatikai rendszerei megbízhatóan működjenek, biztonságosak és hatékonyak legyenek, vegye fel velünk a kapcsolatot!",
+      "A modern vállalkozások sikerének alapja egy jól működő, biztonságos és hatékony informatikai rendszer. A SIRONIC Rendszerház célja, hogy levegye az IT-val kapcsolatos terheket ügyfelei válláról, és megbízható, átlátható megoldásokat nyújtson.\n\n Cégünk teljes körű informatikai szolgáltatásokat kínál, legyen szó rendszerek kiépítéséről, karbantartásáról vagy korszerűsítéséről. Segítünk a szerver- és felhőmegoldások kialakításában, biztosítjuk a hálózati stabilitást, és gyorsan reagálunk a felmerülő problémákra. Ügyfeleink számára havonta előre tervezhető IT támogatást biztosítunk, így nem kell váratlan költségekkel számolniuk.\n\nWebfejlesztési szolgáltatásainkkal gondoskodunk arról, hogy vállalkozása online megjelenése professzionális és naprakész legyen. Modern, gyors és felhasználóbarát weboldalakat készítünk, amelyek megfelelnek a mai piaci elvárásoknak.\n\nHa Ön is szeretné, hogy informatikai rendszerei megbízhatóan működjenek, biztonságosak és hatékonyak legyenek, vegye fel velünk a kapcsolatot!",
     buttonText: "Részletek",
     buttonLink: "#szolgaltatas",
     imageUrl: "/logo/logo1.svg",
