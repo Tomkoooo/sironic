@@ -34,8 +34,8 @@ const Navbar = () => {
         },
         {
         id: 3,
-        name: "Szomdáltatásaink",
-        link: "#szomdaltatas",
+        name: "Szolgáltatásaink",
+        link: "#szolgaltatas",
         },
         {
         id: 4,
